@@ -1,0 +1,40 @@
+Redux main topics:
+------------------
+
+---> Action - What to do?
+
+---> Reducer - How to do?
+
+---> Store - Object which holds the state of the application
+
+---> Functions associated with store - There are several callback functions that are associated with the store:
+                                        1. createStore()
+                                        2. dispatch(action)
+                                        3. getState()
+
+
+Topic brief definition:
+-----------------------
+
+--> Action - Actions are plain js objects that have a 'type' field. It only tells what to do
+             but not how to do it.
+
+---> Reducer - Reducers are functions that take a current state and action as an arguement and
+               return the new state.
+
+---> Store - The redux store brings together the state, actions and reducers that make up an app.
+             *Note: 1. A redux application must have only a single store.
+                    2. Every redux store should have a single root reducer.
+
+
+Redux principles:
+-----------------
+
+---> Single source of truth - The global state of the application is stored as an object
+                              in a single store.
+
+---> State is read-only - The only to change a state is to dispatch an action.
+
+---> Immutability, One way data flow, Predictibilty of outcome.
+
+---> Changes are made with pure reducer functions.
