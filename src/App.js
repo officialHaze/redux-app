@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="home-page">
+      <div className="container">
+        <div className="heading">
+          <h1>Increment/Decrement number</h1>
+        </div>
+        <div className="counter">
+          <button  className="decrease">-</button>
+          <div>counter value</div>
+          <button className="increase">+</button>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;
